@@ -155,7 +155,7 @@
         </div>
     </header>
     <div class="container">
-        <h1>Join The Best GYM of Raipur Now</h1>
+        <h1>Join The Best GYM of Pune Now</h1>
         <form action="noaction.php">
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your Name">
