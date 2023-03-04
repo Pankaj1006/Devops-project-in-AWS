@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,178 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fitness Band</title>
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
-    /* CSS Reset */
-    body {
-        font-family: 'Baloo Bhai', cursive;
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        background: url('https://cdn.pixabay.com/photo/2017/07/21/09/35/muscles-2525200_960_720.jpg');
-        background-size: cover;
-        
-    }
-
-    .left {
-        display: inline-block;
-        /* border: 2px solid red; */
-        position: absolute;
-        left: 60px;
-        top: 20px;
-    }
-
-    .left img {
-        width: 200px;
-        filter: invert(100%);
-    }
-
-    .left div {
-        line-height: 19px;
-        font-size: 26px;
-        text-align: center;
-        color: red;
-    }
-
-    .mid {
-        display: block;
-        width: 36%;
-        margin: 29px auto;
-        /* border: 2px solid green; */
-        color: red;
-       
-    }
-
-    .right {
-        position: absolute;
-        right: 34px;
-        top: 43px;
-        display: inline-block;
-        /* border: 2px solid yellow; */
-    }
-
-    .navbar {
-        display: inline-block;
-    }
-
-    .navbar li {
-        display: inline-block;
-        font-size: 25px;
-    }
-
-    .navbar li a {
-        color: rgb(234, 0, 0);
-        text-decoration: none;
-        padding: 34px 23px;
-
-    }
-
-    .navbar li a:hover,
-    .navbar li a.active {
-        text-decoration: none;
-        color: red;
-
-    }
-
-    .btn {
-        font-family: 'Baloo Bhai', cursive;
-        margin: 0px 9px;
-        background-color: black;
-        color: white;
-        padding: 4px 14px;
-        border: 2px solid red;
-        border-radius: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .btn:hover {
-        background-color: black;
-    }
-
-    .container {
-        border: 2px solid rgb(235, 51, 51);
-        margin: 106px 80px;
-        padding: 75px;
-        width: 33%;
-        border-radius: 28px;
-    }
-
-    .form-group input {
-        font-family: 'Baloo Bhai', cursive;
-        text-align: center;
-        display: block;
-        width: 508px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 25px;
-        border-radius: 8px;
-        color: red;
-    }
-
-    .container h1 {
-        text-align: center;
-        color: black;
-    }
-
-    .container button {
-        display: block;
-        width: 74%;
-        margin: 20px auto;
-    }
-</style>
 
 <body>
-    <header class="header">
-        <!-- Left box for logo -->
-        <div class="left">
-            <img src="https://cdn.pixabay.com/photo/2016/05/17/21/56/weight-1399281_960_720.png" alt="">
-            <div>Fitness Band</div>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="MyOnlineMeal.com">
         </div>
-        <!-- Mid box for navbar -->
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Fitness Calculator</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box  hover">
+                <img src="logo1.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                    recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="1.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
+                    dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="bg2.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
+                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo1.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo1.jpg" alt="Our Client">
+            </div>
+
+            <div class="client-item">
+                <img src="logo1.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="logo1.jpg" alt="Our Client">
+            </div>
         </div>
 
-        <!-- Right box for buttons -->
-        <div class="right">
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email Us</button>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
         </div>
-    </header>
-    <div class="container">
-        <h1>Join The Best GYM of Pune Now</h1>
-        <form action="noaction.php">
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Name">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Age">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Gender">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Locality">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Email Id">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Phone Number">
-            </div>
-            <button class="btn">Submit</button>
-        </form>
-    </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
 </body>
 
 </html>
