@@ -138,7 +138,7 @@
             <img src="https://cdn.pixabay.com/photo/2016/05/17/21/56/weight-1399281_960_720.png" alt="">
             <div>Fitness Band</div>
         </div>
-        <!-- Mid box for navbar -->
+   
         <div class="mid">
             <ul class="navbar">
                 <li><a href="#" class="active">Home</a></li>
@@ -148,7 +148,7 @@
             </ul>
         </div>
 
-        <!-- Right box for buttons -->
+ 
         <div class="right">
             <button class="btn">Call Us Now</button>
             <button class="btn">Email Us</button>
@@ -180,8 +180,7 @@
     </div>
 </body>
 
-</html>
--->
+</html> -->
 
 
 <table border="1">
