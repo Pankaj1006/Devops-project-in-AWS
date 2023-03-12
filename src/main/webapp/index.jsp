@@ -4,15 +4,15 @@
 	<title>Buggy Game</title>
 	<style>
 		body {
-			background-color: #F00;
-			color: #FFF;
-			font-size: 30px;
+			background-color: #00FF00;
+			color: #000000;
+			font-size: 20px;
 		}
 
 		button {
-			background-color: #00F;
-			color: #000;
-			font-size: 24px;
+			background-color: #FF0000;
+			color: #000000;
+			font-size: 20px;
 			border: none;
 			border-radius: 5px;
 			padding: 10px;
@@ -28,9 +28,9 @@
 	<p>Click the button as many times as you can in 10 seconds!</p>
 
 	<button id="startBtn">Start Game!</button>
-	<p id="timer">0</p>
+	<p id="timer">10</p>
 	<button id="clickBtn">Click Me!</button>
-	<p id="score"></p>
+	<p id="score">0</p>
 
 	<script>
 		let timer = 10;
@@ -63,11 +63,11 @@
 		});
 
 		document.getElementById("startBtn").addEventListener("mouseover", () => {
-			document.getElementById("startBtn").style.backgroundColor = "#0F0";
+			document.getElementById("startBtn").style.backgroundColor = "#FFFF00";
 		});
 
 		document.getElementById("startBtn").addEventListener("mouseleave", () => {
-			document.getElementById("startBtn").style.backgroundColor = "#00F";
+			document.getElementById("startBtn").style.backgroundColor = "#FF0000";
 		});
 
 		document.getElementById("clickBtn").addEventListener("dblclick", () => {
@@ -76,13 +76,22 @@
 		});
 
 		document.getElementById("clickBtn").addEventListener("mouseenter", () => {
-			document.getElementById("clickBtn").style.fontSize = "36px";
-		});
-
-		document.getElementById("clickBtn").addEventListener("mouseleave", () => {
 			document.getElementById("clickBtn").style.fontSize = "24px";
 		});
 
+		document.getElementById("clickBtn").addEventListener("mouseleave", () => {
+			document.getElementById("clickBtn").style.fontSize = "20px";
+		});
+
+	</script>
+
+	<script>
+		let button = document.getElementById("clickBtn");
+		let clicks = 0;
+		button.onclick = function() {
+			clicks += 1;
+			button.innerHTML = "Click Me! " + clicks;
+		};
 	</script>
 
 </body>
