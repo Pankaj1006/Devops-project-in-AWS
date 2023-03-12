@@ -133,7 +133,7 @@
 
 <body>
     <header class="header">
-        <!-- Left box for logo -->
+
         <div class="left">
             <img src="https://cdn.pixabay.com/photo/2016/05/17/21/56/weight-1399281_960_720.png" alt="">
             <div>Fitness Band</div>
