@@ -183,39 +183,95 @@
 </html> -->
 
 
-<table border="1">
-<caption>
-    Rental price
-</caption>
-<thead>
-    <tr>
-        <td></td>
-        <th id="small" scope="col">
-            Small car
-        </th>
-        <th id="big" scope="col">
-            Big Car
-        </th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <th id="paris" class="span" colspan="3" scope="colgroup">
-            Paris
-        </th>
-        </tr>
-        <tr>
-        <th headers="paris" id="day1">
-            1 day
-        </th>
-        <td headers="paris day1 big"> 
-            11 euros
-        </td>
-        <td headers="berlin day1 big"> 
-            50 euros
-        </td>
-        </tr>
-    </tr>
-</tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Midgard Create example</title>
+    <script src="../deps/jquery-1.7.1.min.js"></script>
+    <script src="../deps/jquery-ui-1.8.18.custom.min.js"></script>
+    <script src="../deps/underscore-min.js"></script>
+    <script src="../deps/backbone-min.js"></script>
+    <script src="../deps/vie-min.js"></script>
 
+    <!-- Tags input is needed for the Tag widget -->
+    <script src="../deps/jquery.tagsinput.min.js"></script>
+
+    <!-- rdfQuery and annotate are only needed for the Hallo
+    annotations plugin -->
+    <script src="../deps/jquery.rdfquery.min.js"></script>
+    <script src="../deps/annotate-min.js"></script>
+
+    <script src="../deps/rangy-core-1.2.3.js"></script>
+    <script src="../deps/hallo-min.js"></script>
+    <script src="./create.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('body').midgardCreate({
+                url: function () {
+                    return 'javascript:false;';
+                },
+                metadata: {
+                    midgardTags: {}
+                },
+                collectionWidgets: {
+                    'default': 'midgardCollectionAdd',
+                    'skos:related': null
+                },
+                stanbolUrl: 'http://dev.iks-project.eu:8081'/*,
+                 language: 'pt_BR'*/
+            });
+
+            // Set a simpler editor for title fields
+            jQuery('body').midgardCreate('configureEditor', 'title', 'halloWidget', {
+                plugins: {
+                    halloformat: {},
+                    halloblacklist: {
+                        tags: ['br']
+                    }
+                }
+            });
+            jQuery('body').midgardCreate('setEditorForProperty', 'dcterms:title', 'title');
+
+            // Disable editing of author fields
+            jQuery('body').midgardCreate('setEditorForProperty', 'dcterms:author', null);
+
+        });
+        // Fake Backbone.sync since there is no server to communicate with
+        Backbone.sync = function(method, model, options) {
+            if (console && console.log) {
+                console.log('Model contents', model.toJSONLD());
+            }
+            options.success(model);
+        };
+    </script>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.css"
+            />
+    <link rel="stylesheet" href="../themes/create-ui/css/create-ui.css"
+            />
+    <link rel="stylesheet" href="../themes/midgard-notifications/midgardnotif.css"
+            />
+    <link rel="stylesheet" href="demo.css" />
+</head>
+
+<body>
+
+<div id="content">
+    <div id="main">
+
+        <div  xmlns:dcterms="http://purl.org/dc/terms/" xmlns:sc="http://schema.org/" xmlns:cw="http://schema.org/CreativeWork/" xmlns:ar="http://schema.org/Article/" typeof="sc:WebPage" about="/cms/simple/get-started">
+
+            <h2  property="cw:headline">Content title</h2>
+            <div  property="cw:text" >
+                <p>
+                    This is a content
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
