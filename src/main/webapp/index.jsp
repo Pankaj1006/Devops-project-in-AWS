@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -180,8 +181,9 @@
 </body>
 
 </html>
+-->
 
-<!--
+
 <table border="1">
 <caption>
     Rental price
@@ -216,5 +218,5 @@
         </tr>
     </tr>
 </tbody>
-</table> -->
+</table>
 
