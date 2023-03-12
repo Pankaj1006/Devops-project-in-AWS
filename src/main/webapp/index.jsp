@@ -1,4 +1,4 @@
-<!--
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -180,8 +180,9 @@
     </div>
 </body>
 
-</html> -->
+</html> 
 
+<!--
 
 <!DOCTYPE html>
 <html lang="en">
@@ -194,11 +195,10 @@
     <script src="../deps/backbone-min.js"></script>
     <script src="../deps/vie-min.js"></script>
 
-    <!-- Tags input is needed for the Tag widget -->
+    
     <script src="../deps/jquery.tagsinput.min.js"></script>
 
-    <!-- rdfQuery and annotate are only needed for the Hallo
-    annotations plugin -->
+  
     <script src="../deps/jquery.rdfquery.min.js"></script>
     <script src="../deps/annotate-min.js"></script>
 
@@ -274,4 +274,4 @@
 
 
 </body>
-</html>
+</html> -->
