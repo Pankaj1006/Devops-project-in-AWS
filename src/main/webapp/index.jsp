@@ -207,10 +207,10 @@
         <th headers="paris" id="day1">
             1 day
         </th>
-        <td headers="paris day1 big"> <!-- Noncompliant, referencing the column "big" instead of "small" -->
+        <td headers="paris day1 big"> 
             11 euros
         </td>
-        <td headers="berlin day1 big"> <!-- Noncompliant, there is no header with id "berlin" -->
+        <td headers="berlin day1 big"> 
             50 euros
         </td>
         </tr>
